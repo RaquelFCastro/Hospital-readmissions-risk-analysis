@@ -38,7 +38,9 @@ Under the Hospital Readmissions Reduction Programm (HRPP), hospitals in the U.S.
 
 ## Recommendations
 **1** Focus discharge planning and follow-up on patients with the highest risk based on past hospital visits.
+
 **2** Give extra care coordination to patients with heart/circulatory conditions and diabetes, given they have higher readmission rates.
+
 **3** Review discharge processes at facilities with high readmission rates to find areas that could be improved.
 
 
