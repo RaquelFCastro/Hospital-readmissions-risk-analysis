@@ -14,7 +14,7 @@ Under the Hospital Readmissions Reduction Programm (HRPP), hospitals in the U.S.
 ## Methodology
 **Cleaning**: Replace the placeholder missing values with Nulls, removed column with about 90% missing data, kept only one encounter per patient to avoid duplicate bias, and removed patients who were inactive or were discharged to hospice.
 
-**Exploratory analysis**: Established baseline readmission rates by age, admission type, and diagnoses category
+**Exploratory analysis**: Established baseline readmission rates by age, admission type, and diagnoses category.
 
 **Advanced Analysis**: Built reusable high-risk patient group with CTE, applied window function to rank patients by risk, grouped them by medication use and number of diagnoses, and found diagnoses categories with above average readmission rates.
 
@@ -23,10 +23,10 @@ Under the Hospital Readmissions Reduction Programm (HRPP), hospitals in the U.S.
 
 ## Key SQL Techniques Used
 - CTEs to stage, reusable risk cohort across multiple queries.
-- Wintow functions: RANK() OVER (PARTITION BY) to rank medication burden within age groups, NTILE(4) to build risk quartiles.
-- CASE-based tiering to convert continuous variables into business.readable risk categories.
+- Window functions: RANK() OVER (PARTITION BY) to rank medication burden within age groups, NTILE(4) to build risk quartiles.
+- CASE-based tiering to convert continuous variables into business-readable risk categories.
 - Correlated subqueries with HAVING to isolate diagnoses categories performing above the population-wide average.
-- Multi-table joins against multiple ID-mapping refererence tables to convert numeric codes into readable labels.
+- Multi-table joins against multiple ID-mapping reference tables to convert numeric codes into readable labels.
 
 
 ## Findings
